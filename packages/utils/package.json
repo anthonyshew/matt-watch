@@ -1,21 +1,16 @@
 {
-  "name": "@repo/ui",
+  "name": "@repo/utils",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "exports": {
-    "./button": "./dist/button.js",
-    "./card": "./dist/card.js",
-    "./code": "./dist/code.js"
+    "./const": "./dist/const.js"
   },
   "scripts": {
     "dev": "tsc",
     "build": "tsc",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component"
-  },
-  "dependencies": {
-    "@repo/utils": "workspace:*"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
